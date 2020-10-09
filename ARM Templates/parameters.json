@@ -1,0 +1,132 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "artifactsLocation": {
+            "value": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/Configuration_9-11-2020.zip"
+        },
+        "nestedTemplatesLocation": {
+            "value": "https://catalogartifact.azureedge.net/publicartifacts/Microsoft.Hostpool-ARM-1.0.15-preview/"
+        },
+        "hostpoolName": {
+            "value": "WVDPool"
+        },
+        "hostpoolDescription": {
+            "value": "Created through the WVD extension"
+        },
+        "location": {
+            "value": "eastus2"
+        },
+        "validationEnvironment": {
+            "value": false
+        },
+        "addToWorkspace": {
+            "value": false
+        },
+        "hostpoolType": {
+            "value": "Pooled"
+        },
+        "loadBalancerType": {
+            "value": "BreadthFirst"
+        },
+        "customRdpProperty": {
+            "value": ""
+        },
+        "vmTemplate": {
+            "value": "{\"domain\":\"wvdlab.in\",\"galleryImageOffer\":null,\"galleryImagePublisher\":null,\"galleryImageSKU\":null,\"imageType\":\"CustomImage\",\"imageUri\":null,\"customImageId\":\"/subscriptions/52357355-aaab-4d65-a9c0-aa285d794ff4/resourceGroups/aibwinsig/providers/Microsoft.Compute/galleries/myIBSIG/images/winSvrimage\",\"namePrefix\":\"WVDHost\",\"osDiskType\":\"StandardSSD_LRS\",\"useManagedDisks\":true,\"vmSize\":{\"id\":\"Standard_D2s_v3\",\"cores\":2,\"ram\":8},\"galleryItemId\":null}"
+        },
+        "tokenExpirationTime": {
+            "value": "2020-10-08T18:49:32.605Z"
+        },
+        "administratorAccountUsername": {
+            "value": "azureuser@wvdlab.in"
+        },
+        "administratorAccountPassword": {
+            "value": null
+        },
+        "createAvailabilitySet": {
+            "value": true
+        },
+        "vmResourceGroup": {
+            "value": ""
+        },
+        "vmLocation": {
+            "value": "eastus2"
+        },
+        "vmSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "vmNumberOfInstances": {
+            "value": 1
+        },
+        "vmNamePrefix": {
+            "value": "WVDHost"
+        },
+        "vmImageType": {
+            "value": "CustomImage"
+        },
+        "vmDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "vmUseManagedDisks": {
+            "value": true
+        },
+        "existingVnetName": {
+            "value": "VNet-Azureeastus2"
+        },
+        "existingSubnetName": {
+            "value": "Subnet-WVD"
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "ADonAzureVMss"
+        },
+        "usePublicIP": {
+            "value": false
+        },
+        "createNetworkSecurityGroup": {
+            "value": false
+        },
+        "domain": {
+            "value": ""
+        },
+        "ouPath": {
+            "value": ""
+        },
+        "hostpoolTags": {
+            "value": {}
+        },
+        "applicationGroupTags": {
+            "value": {}
+        },
+        "availabilitySetTags": {
+            "value": {}
+        },
+        "networkInterfaceTags": {
+            "value": {}
+        },
+        "networkSecurityGroupTags": {
+            "value": {}
+        },
+        "publicIPAddressTags": {
+            "value": {}
+        },
+        "virtualMachineTags": {
+            "value": {}
+        },
+        "imageTags": {
+            "value": {}
+        },
+        "apiVersion": {
+            "value": "2019-12-10-preview"
+        },
+        "deploymentId": {
+            "value": "c23fd5df-7f66-40bf-8819-0040acf5f028"
+        },
+        "vmCustomImageSourceId": {
+            "value": "/subscriptions/52357355-aaab-4d65-a9c0-aa285d794ff4/resourceGroups/aibwinsig/providers/Microsoft.Compute/galleries/myIBSIG/images/winSvrimage"
+        },
+        "allApplicationGroupReferences": {
+            "value": ""
+        }
+    }
+}
