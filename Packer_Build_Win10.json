@@ -38,7 +38,7 @@
     },
 
     "location": "eastus2",
-    "vm_size": "Standard_B2ms"
+    "vm_size": "Standard_D2_v2"
   }],
   "provisioners": [{
     "type": "powershell",
